@@ -1,0 +1,10 @@
+#!/bin/sh
+
+#
+# Имя хоста
+#
+
+export HOSTNAME="distmaker3"
+
+echo "$HOSTNAME" > /etc/hostname
+echo "127.0.1.1 localhost.localdomain $HOSTNAME" >> /etc/hosts

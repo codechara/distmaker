@@ -1,0 +1,9 @@
+#!/bin/sh
+
+#
+# Пост-установка пакетов
+#
+
+apt update
+apt install -y network-manager locales tasksel vim sudo
+tasksel install standart

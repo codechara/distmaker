@@ -1,0 +1,10 @@
+#!/bin/sh
+
+#
+# just a depmod before we boot to normal mode
+#
+
+depmod
+mv /init /init.depmod_done
+ln -s /sbin/init /init                
+reboot -f
